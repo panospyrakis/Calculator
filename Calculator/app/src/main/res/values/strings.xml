@@ -1,14 +1,18 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="title_activity_calculator">CalculatorActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="number">Num</string>
+    <string name="gpb">GBP</string>
     <string name="usd">USD</string>
     <string name="euro">EURO</string>
-    <string name="calc_placeholder">1234567890</string>
+    <string name="yen">JPY</string>
+    <string name="base_url">http://data.fixer.io/api/</string>
+
+    <string name="calc_placeholder">0</string>
 
     <string name="clear">C</string>
+    <string name="clear_all">CE</string>
+    <string name="backspace">BcS</string>
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
@@ -19,11 +23,9 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="zero">0</string>
-    <string name="parentheses">( )</string>
-    <string name="percent">%</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
-    <string name="plus_minus">+/-</string>
+    <string name="divide_one">1/x</string>
     <string name="divide">÷</string>
     <string name="multiply">*</string>
     <string name="dot">.</string>
