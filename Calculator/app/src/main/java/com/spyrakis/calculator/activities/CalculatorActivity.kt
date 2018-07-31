@@ -266,6 +266,7 @@ class CalculatorActivity : AppCompatActivity() {
                 value = 1/value
                 screenText = df.format(value).replace(',','.')
                 calculatorText.text = screenText
+                isResult = true
             }
         }
     }
