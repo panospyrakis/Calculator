@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemSelectedListener
+import android.widget.Toast
 import com.spyrakis.calculator.R
 import com.spyrakis.calculator.adapters.CustomSpinnerAdapter
 import com.spyrakis.calculator.interfaces.CalculatorService
@@ -81,6 +82,8 @@ class CalculatorActivity : AppCompatActivity() {
     private fun consumeRatesResult(ratesResponse: RatesResponse) {
         if (ratesResponse.rates != null ){
             rates = ratesResponse.rates
+        }else{
+            rates = Rates()
         }
     }
 
@@ -88,6 +91,7 @@ class CalculatorActivity : AppCompatActivity() {
         if (error != null) {
             Log.d(error.message, error.stackTrace.toString())
         }
+        rates = Rates()
     }
 
     /**
@@ -114,6 +118,7 @@ class CalculatorActivity : AppCompatActivity() {
                     else-> 1.0
                 }
                 if (rateToSelect == 0.0){
+                    Toast.makeText(applicationContext,R.string.error_message,Toast.LENGTH_LONG).show()
                     return
                 }
 

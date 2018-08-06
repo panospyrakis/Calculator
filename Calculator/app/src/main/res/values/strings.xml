@@ -9,6 +9,7 @@
     <string name="base_url">http://data.fixer.io/api/</string>
 
     <string name="calc_placeholder">0</string>
+    <string name="error_message">Unable to fetch currency rates.\nConnect to internet and restart app.</string>
 
     <string name="clear">C</string>
     <string name="clear_all">CE</string>
